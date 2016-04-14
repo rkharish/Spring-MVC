@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.car.com/new" 
+xmlns:tns="http://www.car.com/new" 
+elementFormDefault="qualified">
+
+<element name="carRequest" type="tns:Car"/>
+<element name="carResponse" type="string"/>
+
+<complexType name="Car">
+
+	<sequence>
+		<element name="Brand" type="string" />
+		<element name="Model" type="string" />
+		<element name="Price" type="float" />
+		<element name="Color" type="string" />
+		<element name="Picture" type ="base64Binary"/>
+	</sequence>
+</complexType>
+
+</schema>
